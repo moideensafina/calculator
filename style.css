@@ -1,0 +1,73 @@
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@600&family=Permanent+Marker&family=Poppins:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 140px;
+    width: auto;
+    background-color: rgb(21, 19, 19);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 500px; 
+}
+.calculator{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+}
+.calc{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+font-family: 'Permanent Marker', cursive;
+    
+}
+input{
+    grid-column: span 4;
+    width: 255px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: end;
+    background-color: rgba(128, 128, 128, 0.666);
+}
+button{
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin: 10px;
+    font-weight: bold;
+    background-color: gray;
+}
+.total{
+    width: 180px;
+}
+@media (width<= 600px)
+{
+    .calculator{
+        margin: 0;
+    }
+    
+}
